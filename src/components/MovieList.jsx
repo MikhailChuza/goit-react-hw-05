@@ -13,7 +13,7 @@ export default function MovieList({ movies }) {
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                 alt={movie.original_title}
-                height={100}
+                height={400}
               />
             )}
           </Link>

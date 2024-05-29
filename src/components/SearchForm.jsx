@@ -27,7 +27,7 @@ export default function SearchForm({ handleSubmit }) {
         <input
           style={customStyle}
           type="text"
-          placeholder="Search movies/"
+          placeholder="Search movies..."
           onChange={changeInputFunc}
         />
         <button style={buttonStyle} type="submit">
@@ -58,7 +58,7 @@ const customStyle = {
 const buttonStyle = {
   color: "white",
   textDecoration: "none",
-  backgroundColor: "blue",
+  backgroundColor: "rgb(9, 51, 57)",
   padding: "12px",
   borderRadius: "5px",
   fontSize: "15px",
