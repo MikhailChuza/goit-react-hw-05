@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_KEY =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NWQ5YWI4MDkwOWM0ZjMyNTdlMDA5ZWIyMmZkZTRkMCIsInN1YiI6IjY2NDA5YzE1YWIxM2NiNWE3N2ExYjkxMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TnsOzpRhNqFp9Kyqr4O35yBdRs-sjw4m9Z7DCYzXdN4";
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZTAwZmRiY2M2ZjFiNDIyYmRmMzA2NDFiNmVjNmI3YSIsInN1YiI6IjY2NTcxNGY1NzY2NmZiNmYzYjZiZjRmNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UcVgQd3qSNJBJ206KVWYui8BIFY4Qv-L3WG-AGm4rBM";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 axios.defaults.headers.common["Authorization"] = `Bearer ${API_KEY}`;
@@ -38,3 +38,4 @@ export const fetchMovieReviews = async (movieId) => {
   const response = await axios.get(`${BASE_URL}/movie/${movieId}/reviews`);
   return response.data.results;
 };
+
